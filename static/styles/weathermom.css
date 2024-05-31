@@ -1,0 +1,162 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background container */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure it's behind other content */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire background */
+    filter: blur(10px); /* Apply a 10px blur to the background image */
+}
+
+/* Content container */
+.content-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ensure full viewport height */
+    color: Black; /* Text color for header */
+}
+
+/* Header styles */
+.header {
+    position: absolute;
+    top: 15%; /* Position at the center vertically */
+    left: 50%; /* Position at the center horizontally */
+    transform: translate(-50%, -50%); /* Center align the header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+.header h1 {
+    font-size: 3em; /* Adjust as needed */
+    margin-bottom: 10px; /* Space between header elements */
+}
+
+.header p {
+    font-size: 1.5em; /* Adjust as needed */
+}
+
+.location-text {
+    text-align: center; /* Center align text */
+    font-weight: bold; /* Bold text */
+    font-size: 1.2em; /* Adjust font size */
+    margin-top: 10px; /* Space between image and text */
+}
+
+/* User Profile */
+.user-profile {
+    position: relative;
+    width: 25%; /* Take up only 25% of the page width */
+    margin: 0;
+    left: 5%; /* Add some left margin */
+    top: 20%; /* Adjust the top position */
+    transform: translateY(-20%);
+    color: black;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile h3 {
+    font-size: 2em;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px; /* Add space between form groups */
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.form-group span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: calc(100% - 22px);  /* Adjust width for padding */
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Edit button styles */
+button[type="button"] {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #007bff;
+    background: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Weather container */
+.weather {
+    position: absolute;
+    top: 30%; /* Adjust top position as needed */
+    right: 10%;
+    width: 50%; /* Take up 3/4 of the page width */
+    padding: 20px;
+    text-align: center; /* Center align the text within the container */
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather h2 {
+    text-align: left; /* Right align the h2 text */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
